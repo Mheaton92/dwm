@@ -112,6 +112,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
 	{ MODKEY,                       XK_a,      setgaps,        {.i = -1 } },
 	{ MODKEY,                       XK_s,      setgaps,        {.i = +1 } },
+	{ MODKEY|ShiftMask,              XK_s,      togglesticky,   {0} },
 	/* { MODKEY|ControlMask,	   XK_comma,  cyclelayout,    {.i = -1 } }, */
 	/* { MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } }, */
 	/* { MODKEY,                       XK_space,  setlayout,      {0} }, */
