@@ -204,6 +204,7 @@ static void setclientstate(Client *c, long state);
 static void setfocus(Client *c);
 static void setfullscreen(Client *c, int fullscreen);
 static void setgaps(const Arg *arg);
+static void togglegaps(const Arg *arg);
 static void setlayout(const Arg *arg);
 static void setmfact(const Arg *arg);
 static void setup(void);
@@ -1529,7 +1530,15 @@ setgaps(const Arg *arg)
 		selmon->gappx += arg->i;
 	arrange(selmon);
 }
-
+void
+togglegaps(const Arg *arg)
+{
+	if ((selmon->gappx == 0) || (selmon->gappx + arg->i < 0))
+		selmon->gappx = arg->i;
+	else
+		selmon->gappx = 0;
+	arrange(selmon);
+}
 void
 setlayout(const Arg *arg)
 {
