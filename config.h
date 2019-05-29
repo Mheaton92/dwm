@@ -27,7 +27,7 @@ static const unsigned int alphas[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { ">_", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { " ", " ", "3", "4", "5", "6", "7", "8", " " };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -50,7 +50,7 @@ static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "🧱",      tile },    /* first entry is default */
 	{ "🔎",      monocle },
-	{ "🌐",      grid },
+	{ " ",      grid },
 	{ "|M|",      centeredmaster },
 	{ ">M>",      centeredfloatingmaster },
  	{ "[@]",      spiral },
