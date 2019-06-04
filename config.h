@@ -80,11 +80,11 @@ static Key keys[] = {
 	/* modifier                   key        	function        argument */
 
 /*	{ MODKEY,                     XK_d,      	spawn,          {.v = dmenucmd } }, */
-/*	{ MODKEY,					  XK_Return, 	spawn,          {.v = termcmd } },  */
-/*	{ MODKEY,					  XK_r, 	   	spawn,          {.v = filecmd } },  */
-/*	{ MODKEY,					  XK_i, 	   	spawn,          {.v = gotop } },    */
-/*	{ MODKEY,					  XK_c,	     	spawn,          {.v = calc } },     */
-	
+/*	{ MODKEY,		      XK_Return, 	spawn,          {.v = termcmd } },  */
+/*	{ MODKEY,		      XK_r, 	   	spawn,          {.v = filecmd } },  */
+/*	{ MODKEY,		      XK_i, 	   	spawn,          {.v = gotop } },    */
+/*	{ MODKEY,		      XK_c,	     	spawn,          {.v = calc } },     */
+
 	{ MODKEY|ShiftMask,           XK_z,      	togglegaps,     {.i = gappx } },
 	{ MODKEY,                     XK_j,      	focusstack,     {.i = +1 } },
 	{ MODKEY,                     XK_k,      	focusstack,     {.i = -1 } },
@@ -98,9 +98,9 @@ static Key keys[] = {
 	{ MODKEY,                     XK_b,      	togglebar,      {0} },
 	{ MODKEY,                     XK_h,      	setmfact,       {.f = -0.05} },
 	{ MODKEY,                     XK_l,      	setmfact,       {.f = +0.05} },
-	{ MODKEY,	   				  XK_Tab,		view,	  	    {0} },
-	{ MODKEY,				   	  XK_backslash,	view,	   	    {0} },
-	{ MODKEY,					  XK_q,         killclient,     {0} },
+	{ MODKEY,	              XK_Tab,		view,	  	    {0} },
+	{ MODKEY,		      XK_backslash,	view,	   	    {0} },
+	{ MODKEY,		      XK_q,         killclient,     {0} },
 	{ MODKEY,                     XK_t,         setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                     XK_f,         setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                     XK_g,         setlayout,      {.v = &layouts[2]} },
