@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "FiraCode-Medium:size=12" };
 static const char dmenufont[]       = "FiraCode-Medium=12";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+static const char col_gray1[]       = "#e7dee6";
+static const char col_gray2[]       = "#B0B0B0";
+static const char col_gray3[]       = "#101010";
+static const char col_gray4[]       = "#B0B0B0";
+static const char col_cyan[]        = "#101010";
 static const unsigned int baralpha = 0xc0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
