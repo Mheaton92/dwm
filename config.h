@@ -8,11 +8,11 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "FiraCode-Medium:size=12" };
 static const char dmenufont[]       = "FiraCode-Medium=12";
-static const char col_gray1[]       = "#e7dee6";
-static const char col_gray2[]       = "#B0B0B0";
-static const char col_gray3[]       = "#101010";
-static const char col_gray4[]       = "#B0B0B0";
-static const char col_cyan[]        = "#101010";
+static const char col_gray1[]       = "#24122C";
+static const char col_gray2[]       = "#dad2cb";
+static const char col_gray3[]       = "#9E7C82";
+static const char col_gray4[]       = "#9E7C82";
+static const char col_cyan[]        = "#99837E";
 static const unsigned int baralpha = 0xc0;
 static const unsigned int borderalpha = OPAQUE;
 static const char *colors[][3]      = {
@@ -71,7 +71,6 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
-static const char *termcmd[]  = { "st", NULL };
 /*static const char *filecmd[]  = { "st", "ranger", NULL };*/
 /*static const char *gotop[]  = { "st", "gotop", NULL };*/
 /*static const char *calc[]  = { "st", "bc", NULL };*/
